@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/LevenshteinDistance_jar</output-path>
     <root id="archive" name="LevenshteinDistance.jar">
       <element id="module-output" name="LevenshteinDistance" />
+      <element id="dir-copy" path="$PROJECT_DIR$/resources" />
     </root>
   </artifact>
 </component>
