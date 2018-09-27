@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LevenshteinDistance:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LevenshteinDistance_jar</output-path>
+    <root id="archive" name="LevenshteinDistance.jar">
+      <element id="module-output" name="LevenshteinDistance" />
+    </root>
+  </artifact>
+</component>

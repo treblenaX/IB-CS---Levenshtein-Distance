@@ -72,12 +72,15 @@ public class LDCalculator {
 
     private static String[] returnRest(int index, String s) {
         String[] str = {"", ""};
-        // String[0] = all chars before index, String[1] = all chars after index
-        for (int i = 0; i < index; i++) {
-            str[0] += s.charAt(i);
-        }
-        for (int i = index + 1; i < s.length(); i++) {
-            str[1] += s.charAt(i);
+        if (index != 0 && index < s.length() - 1) {
+            str[0] = s.substring(0, index);
+            str[1] = s.substring(index + 1, s.length());
+            return str;
+        } else if (index == 0) { // Get everything after the first char
+            str[1] = s.substring(index + 1, s.length());
+            return str;
+        } else { // Get everything before the last char
+            str[0] = s.substring(0, index);
         }
         return str;
     }
